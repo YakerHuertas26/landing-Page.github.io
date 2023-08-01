@@ -2,7 +2,7 @@
     --font-size-pequeña:1.4rem ;
     --font-size-foter:1.7rem ;
     --font-size-media:1.5rem ;
-
+}
 *{
     padding: 0;
     margin: 0;
@@ -168,7 +168,6 @@ justify-content: space-evenly;
     border: .1rem solid #c6c6c6;
     box-shadow: 0rem .1rem .1rem;
     color: #171717;
-
 }
 
 .link{
