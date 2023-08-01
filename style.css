@@ -2,7 +2,6 @@
     --font-size-pequeña:1.4rem ;
     --font-size-foter:1.7rem ;
     --font-size-media:1.5rem ;
-    --color-letras: #ffffff;
     --background-color:#202124;
     --color-footer: #171717;
 }
@@ -16,37 +15,57 @@
 html{
     font-size: 62.5%;
 }
+
+a{
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
 body{
-    min-width: 360px; 
+    min-width: 36rem;
 }
 header{
-    height:7.5vh;
+    height:7vh;
     width: 100%;
-     
 }
 nav{
-    width: 20%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+   
 }
+.nave-itens .menu{
+    background-image: url(./img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+    
+    
 .nave-itens{
-    width: 60%;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    /* background-color: aquamarine; */
+    align-items: center;
 }
+
 .nave-itens a{
-    color:#FFFFFF;
     font-size: var(--font-size-pequeña);
-    text-decoration: none;
-    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: black;
 }
-.nave-itens a::hover{
+.nave-itens img{
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+/* .nave-itens a::hover{
     color: red;
-}
+} */
 .nave-usuario{
     height: 60%;
     width: 30%;
@@ -66,58 +85,63 @@ nav{
     display: flex;
     align-items: center;
 }   
-.iten1{
-    height: 75%;
-    color: #FFFFFF;
-}
-.iten2{
-    height:99%;
-    border-radius: 1rem;
-}
-.main{
-    height: 80.5vh;
-    width: 100vw;
-    background-color: var(--background-color);
-    
-}
-.conteiner{
-    width: 50vw;
-    height: 100%;
-    margin: 0 auto;
+
+main{
+    text-align: center;
+    height: 80vh;
+    width: 100%;
 
 }
-.imgoogle{
+main input{
+    width: 53rem;
+    margin: 0 auto;
+}
+/* .contenido{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    background-color: #303134;
+} */
+.main-busqueda{
+    margin: 0 auto;
+    height: 5rem;
+    width: 54rem;
+    border-radius: 100px;
+    border: .1rem solid rgb(97, 96, 96);
     display: flex;
     justify-content: center;
-    align-items: end;
-    height: 35%;
-    /* background-color: blue; */
-}
-.busqueda{
-    margin: 0 auto;
-    height: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
 }
-.busqueda input{
-    margin-left: 10%;
+.main-busqueda input{
+    width: 3rem;
     height: 4rem;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+}
+.main-busqueda:hover{
+        box-shadow:0 .1rem .6rem 0 #202124;
+        border-color: #dfe1e500;
+}
+.main-busqueda .search-icon{
+    background-image: url(./img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+   }
+
+.main-busqueda input{
+    margin: 0 auto;
     width: 100%;
     border-radius: 1.5rem;
     border: none;
 }
-.lupa{
-    position: relative;
-    left: 14%;
-    height: 2.5rem;
-}
+
 .busquedaimg{
-/* background-color: #202124; */
-position: relative;
-right: 13%;
+
 width: 20%;
 height: 2.5rem;
 display: flex;
@@ -126,41 +150,52 @@ justify-content: space-evenly;
 .busquedaimg img{
     height: 100%;
 }
-.botton{
+.boton{
+    padding-top: 3rem;
     margin: 0 auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    height: 7%;
-    width: 70%;
+    display: inline-block;
 }
-.botton button{
-    background-color: #303134;
-    color: var(--color-letras);
+
+.boton button{
+    height: 3.6rem;
+    background-color: #f2f2f2;
     border-radius: .5rem;
     font-size: var(--font-size-media);
-    width: 35%;
     border: none;
+    color: #5f6368;
+    margin-right: 1.5rem;
+    padding:  0 1.5rem #f2f2f2;
+    width: 19rem;
 }
+.boton button:hover{
+    border: .1rem solid #c6c6c6;
+    box-shadow: 0rem .1rem .1rem;
+    color: #171717;
+
+}
+
 .link{
     margin-top: 2rem;
     height: 5%;
     font-size: var(--font-size-pequeña);
-    color: var(--color-letras);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .link a{
     text-decoration: none;
-    color: #32c0eb;
+    color: #1a0dab;
 }
 footer{
-    height: 12vh;
-    background-color: var(--color-footer);
-    color: var(--color-letras);
-    font-size: var(--font-size-foter);
-} 
+    height: 15vh;
+    width: 100%;
+    font-size: var(--font-size-pequeña);
+    background-color: #c9c9c93b;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
 .peru{
     padding-top: 1.2rem;
     height: 55%;
@@ -169,7 +204,7 @@ footer{
 .info{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     height: 40%;
     margin-left: 3rem;
     margin-right:  3rem;
@@ -189,5 +224,5 @@ footer{
 }
 .info a{
     text-decoration: none;
-    color: var(--color-letras);
+    color:#70757a ;
 }  
